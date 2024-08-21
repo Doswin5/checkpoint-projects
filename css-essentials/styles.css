@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: inline;
+  /* justify-content: space-between;
+  align-items: center; */
+  padding: 24px 16px;
+  /* box-shadow: 0.1px 0.1px 10px gray; */
+}
+nav span {
+  font-weight: bolder;
+  cursor: pointer;
+}
+nav ul {
+  display: inline;
+  list-style-type: none;
+  gap: 24px;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+nav ul a:hover {
+  color: #00000090;
+}
+
+ul {
+  list-style-type: none;
+}
+section {
+  padding: 0 16px 60px;
+}
+#about h2 {
+  margin-bottom: 10px;
+}
+#about p {
+  margin-bottom: 24px;
+}
+#about div {
+  display: flex;
+  justify-content: center;
+}
+#about video {
+  width: 80%;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+  padding: 0 16px 60px;
+}
+main h1 {
+  max-width: 400px;
+  margin: 12px 0 24px;
+}
+main p {
+  line-height: 24px;
+}
+main .hero-bg {
+  width: 300px;
+  height: 300px;
+}
+main .content div {
+  display: flex;
+  gap: 16px;
+}
+.primary-btn {
+  background-color: #000000;
+  color: white;
+  padding: 16px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: 1px solid black;
+}
+.primary-btn:hover {
+  background-color: rgb(235, 235, 235);
+  color: black;
+  border: 1px solid gray;
+}
+.secondary-btn {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  padding: 16px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+main .secondary-btn:hover {
+  background-color: rgb(235, 235, 235);
+  color: black;
+  border: 1px solid gray;
+}
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 40px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+footer div img {
+  width: 40px;
+}
+
+/* Mobile Screen */
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  main img {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
