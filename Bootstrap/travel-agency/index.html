@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)">TravelAgency</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#destinations">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tours">Tours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search" />
+            <button class="btn btn-primary" type="button">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <header
+      id="home"
+      class="jumbotron jumbotron-fluid"
+      style="
+        background-image: url('https://c4.wallpaperflare.com/wallpaper/101/947/634/kyoto-japan-at-night-wallpaper-preview.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+        padding-top: 40px;
+      "
+    >
+      <div class="container text-center text-white" style="font-weight: bold">
+        <h1 class="h1">Explore the World with Us</h1>
+        <p class="lead">Your dream vacation is just a click away</p>
+        <a href="#" class="btn btn-primary btn-lg">Start Your Journey</a>
+      </div>
+    </header>
+
+    <!-- Destination Section -->
+    <section id="destinations" class="container my-5">
+      <h2 class="text-center mb-4">Our Top Destinations</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://thumbs.dreamstime.com/b/paris-eiffel-tower-river-seine-sunset-france-one-most-iconic-landmarks-107376702.jpg"
+              class="card-img-top"
+              alt="Destination 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Paris, France</h5>
+              <p class="card-text">
+                Explore the city of lights and love, Paris is waiting for you.
+              </p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://www.travelandleisure.com/thmb/KE0vV7K8Ngvc_7j-_FGx_jCUdCM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-bali-lead-image-BALITG1223-101f43c88c044081a4558b737afbd094.jpg"
+              class="card-img-top"
+              alt="Destination 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bali, Indonesia</h5>
+              <p class="card-text">
+                Discover the serene beaches and vibrant culture of Bali.
+              </p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhsvFFFYpairJt-3BB955xX_FujaMur6FAEQ&s"
+              class="card-img-top"
+              alt="Destination 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kyoto, Japan</h5>
+              <p class="card-text">
+                Experience the tradition and beauty of Japan's ancient city.
+              </p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tour Section -->
+    <section id="tours" class="accordion container-fluid" id="accordionExample">
+      <h2 class="text-center mb-4">Tour Packages</h2>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Paris Adventure
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body row">
+            Enjoy a 7-day tour of Paris, including visits to the Eiffel Tower,
+            Louvre, and more.
+            <a href="#" class="btn btn-secondary btn-sm col-3 align-self-start mt-2"
+              >View Details</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Bali Getaway
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            Relax on the beaches of Bali with our all-inclusive 5-day getaway
+            package.
+            <a href="#" class="btn btn-secondary btn-sm col-3 align-self-start mt-2">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            Kyoto Cultural Experience
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            Explore the rich history and culture of Kyoto with our 6-day
+            cultural tour.
+            <a href="#" class="btn btn-secondary btn-sm col-3 align-self-start mt-2">View Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container my-5">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form>
+        <div class="form-group mb-2">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form-group mb-2">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group mb-2">
+          <label for="destination">Destination of Interest</label>
+          <select class="form-control" id="destination">
+            <option>Paris, France</option>
+            <option>Bali, Indonesia</option>
+            <option>Kyoto, Japan</option>
+          </select>
+        </div>
+        <div class="form-group mb-2">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary mt-4">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2024 TravelAgency. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#" class="text-white mr-2"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="#" class="text-white mr-2"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -107,6 +107,7 @@ main .secondary-btn:hover {
   background-color: rgb(235, 235, 235);
   color: black;
   border: 1px solid gray;
+  color: #48488a;
 }
 footer {
   text-align: center;
@@ -125,6 +126,23 @@ footer div {
 }
 footer div img {
   width: 40px;
+}
+
+.ass {
+  margin: 24px;
+  width: 400px;
+  height: 400px;
+  background-image: linear-gradient(#00000090, #00000090), url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1bGGi3JK4IknHua3xDucgbe1ah0T2s2aQcm6AeXC5jEgRKKBz");
+  background-size: contain;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ass p {
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
 }
 
 /* Mobile Screen */
