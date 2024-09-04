@@ -1,7 +1,8 @@
 /* styles.css */
 
 /* Reset some basic elements */
-body, h1, h2, h3, p {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -12,10 +13,23 @@ body {
   line-height: 1.6;
 }
 
+.menu {
+  display: none;
+}
+
+.menu img {
+  width: 24px;
+  height: 24px;
+}
+
 /* Header styling */
 .header {
   background-color: #333;
   padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .navbar {
@@ -56,21 +70,32 @@ body {
 
 /* Hero Section styling */
 .hero {
-  background-image: url('hero-bg.jpg');
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi1LN2tcBNHg38KZLrfiTKSG6RwRTMtRPLUQ&s');
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  height: 80vh;
+  height: 50vh;
+  margin: 80px 24px 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: white;
   text-align: center;
-  padding: 0 20px;
+  padding: 0;
+  border-radius: 24px;
+}
+
+.hero-content {
+  background-color: #00000050;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
 }
 
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 10px;
+  font-weight: 900;
+  margin-bottom: 6px;
 }
 
 .hero p {
@@ -144,6 +169,11 @@ body {
 
 /* Responsive styling */
 @media (max-width: 768px) {
+  .nav-links {
+    list-style: none;
+    display: none;
+  }
+
   .hero h1 {
       font-size: 2rem;
   }
@@ -155,6 +185,15 @@ body {
   .product-grid {
       flex-direction: column;
       align-items: center;
+  }
+
+  .menu {
+    display: block;
+  }
+  
+  .menu img {
+    width: 24px;
+    height: 24px;
   }
 }
 
