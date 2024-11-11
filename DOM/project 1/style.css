@@ -1,0 +1,114 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.shopping-cart {
+  width: 80%;
+  max-width: 600px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Cart Items Styling */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.product-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+}
+
+.item-details {
+  flex: 1;
+  padding-left: 10px;
+}
+
+.product-name {
+  font-size: 18px;
+  margin: 0;
+}
+
+.price {
+  color: #888;
+  font-size: 16px;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.add-button, .subtract-button, .delete-button, .like-button {
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.add-button:hover, .subtract-button:hover, .delete-button:hover, .like-button:hover {
+  background-color: #ddd;
+}
+
+/* Like Button - Toggled Color */
+.like-button {
+  color: #888;
+  font-size: 24px;
+  transition: color 0.3s;
+  margin-right: 10px;
+}
+
+.like-button.liked {
+  color: #ff4757;
+}
+
+/* Delete Button */
+.delete-button {
+  background-color: #ff5e57;
+  color: white;
+  padding: 6px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.delete-button:hover {
+  background-color: #ff3b30;
+}
+
+/* Total Price Styling */
+.total-price-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+}

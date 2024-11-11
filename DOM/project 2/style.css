@@ -1,0 +1,38 @@
+/* Center container and add margin */
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Style for heading */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Style for the color-changing box */
+#color-box {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db; /* Default color */
+  margin: 0 auto;
+  border-radius: 8px;
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+/* Style for the button */
+#change-color-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #2ecc71;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#change-color-btn:hover {
+  background-color: #27ae60; /* Darker shade on hover */
+}
